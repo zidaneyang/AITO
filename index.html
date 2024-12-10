@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>AITO Russia</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="left-nav">
+                <li><a href="#">ГЛАВНАЯ СТРАНИЦА</a></li>
+                <li><a href="#m5">AITO M5</a></li>
+                <li><a href="#m7">AITO M7</a></li>
+                <li><a href="#m9">AITO M9</a></li>
+            </ul>
+            <img src="brand images/AITO.png" alt="AITO logo" class="nav-logo">
+            <ul class="right-nav">
+                <li><a href="#test-drive">тест-драйв</a></li>
+                <li><a href="#contact-us">Связаться с нами</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="image-section">
+            <article class="car-article" id="m9">
+                <figure class="car-figure">
+                    <img src="brand images/M9.webp" alt="AITO M9汽车外观图片，展示整体造型和细节特征" class="main-img">
+                    <figcaption class="car-info">
+                        <h1 class="car-title">AITO M9</h1>
+                        <h2 class="car-subtitle">Панорамный умный флагманский внедорожник</h2>
+                        <ul class="car-features">
+                            <li>4.9S Время разгона до 100км/ч (сек)</li>
+                            <li>496 Мощность (л.с.)</li>
+                            <li>1300 Запас хода по циклу CLTC (км)</li>
+                        </ul>
+                        <div class="car-buttons">
+                            <a href="#contact-us" class="button-link">Узнать больше</a>
+                            <a href="#test-drive" class="button-link">Закажите тест-драйв</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="car-article" id="m7">
+                <figure class="car-figure">
+                    <img src="brand images/M7.webp" alt="AITO M7汽车外观图片，展示整体造型和细节特征" class="main-img">
+                    <figcaption class="car-info">
+                        <h1 class="car-title">AITO M7</h1>
+                        <h2 class="car-subtitle">Панорамный умный флагманский внедорожник</h2>
+                        <ul class="car-features">
+                            <li>4.6S Время разгона до 100км/ч (сек)</li>
+                            <li>496 Мощность (л.с.)</li>
+                            <li>1100 Запас хода по циклу CLTC (км)</li>
+                        </ul>
+                        <div class="car-buttons">
+                            <a href="#contact-us" class="button-link">Узнать больше</a>
+                            <a href="#test-drive" class="button-link">Закажите тест-драйв</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="car-article" id="m5">
+                <figure class="car-figure">
+                    <img src="brand images/M5.webp" alt="AITO M5汽车外观图片，展示整体造型和细节特征" class="main-img">
+                    <figcaption class="car-info">
+                        <h1 class="car-title">AITO M5</h1>
+                        <h2 class="car-subtitle">Панорамный умный флагманский внедорожник</h2>
+                        <ul class="car-features">
+                            <li>4.6S Время разгона до 100км/ч (сек)</li>
+                            <li>496 Мощность (л.с.)</li>
+                            <li>1100 Запас хода по циклу CLTC (км)</li>
+                        </ul>
+                        <div class="car-buttons">
+                            <a href="#contact-us" class="button-link">Узнать больше</a>
+                            <a href="#test-drive" class="button-link">Закажите тест-драйв</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="car-article">
+                <figure class="car-figure">
+                    <img src="brand images/cabin.webp" alt="车内智能座舱相关图片展示" class="main-img">
+                    <figcaption class="car-info">
+                        <h1 class="car-title">Интеллектуальная кабина Harmony 3.0</h1>
+                    </figcaption>
+                </figure>
+            </article>
+            
+        </section>
+        <video src="video.mp4" controls class="main-video"></video>
+        <p class="text-content">Подписывайтесь на нас<br>Поделитесь последними новостями об автомобилях AITO</p>
+        <img src="pic1.jpg" alt="小图片1相关说明" class="small-pic">
+        <img src="pic2.jpg" alt="小图片2相关说明" class="small-pic">
+    </main>
+    <footer>
+        <nav class="bottom-nav">
+            <ul>
+                <li>почта：<a href="mailto:zidaneyang@163.com">zidaneyang@163.com</a></li>
+                <li>WhatsApp：<a href="https://wa.me/18774006797">+18774006797</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navUl = document.querySelector('nav ul');
+        menuToggle.addEventListener('click', function () {
+            navUl.classList.toggle('menu-open');
+        });
+    </script>
+</body>
+
+</html>
