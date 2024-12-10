@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>AITO Russia - Test drive</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="left-nav">
+                <li><a href="C:\Users\zidan\Desktop\Sherry Website Russia/index.html">ГЛАВНАЯ СТРАНИЦА</a></li> <!-- 修改链接为相对路径指向主页 -->
+                <li><a href="#m5">AITO M5</a></li>
+                <li><a href="#m7">AITO M7</a></li>
+                <li><a href="#m9">AITO M9</a></li>
+            </ul>
+            <img src="brand images/AITO.png" alt="AITO logo" class="nav-logo">
+            <ul class="right-nav">
+                <li><a href="test-drive.html">тест-драйв</a></li>
+                <li><a href="#contact-us">Связаться с нами</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- 预约表单部分 -->
+        <section class="test-drive-section">
+            <h2>Заполните форму для записи на тест-драйв</h2>
+            <form id="test-drive-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="text" id="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="preferred-car">Предпочитаемый автомобиль:</label>
+                <select id="preferred-car">
+                    <option value="AITO M5">AITO M5</option>
+                    <option value="AITO M7">AITO M7</option>
+                    <option value="AITO M9">AITO M9</option>
+                </select>
+
+                <label for="preferred-date">Предпочитаемая дата:</label>
+                <input type="date" id="preferred-date" required>
+
+                <label for="preferred-time">Предпочитаемое время:</label>
+                <input type="time" id="preferred-time" required>
+
+                <input type="submit" value="Отправить запрос">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav class="bottom-nav">
+            <ul>
+                <li>почта：<a href="mailto:zidaneyang@163.com">zidaneyang@163.com</a></li>
+                <li>WhatsApp：<a href="https://wa.me/18774006797">+18774006797</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navUl = document.querySelector('nav ul');
+        menuToggle.addEventListener('click', function () {
+            navUl.classList.toggle('menu-open');
+        });
+
+        // 处理表单提交事件
+        const testDriveForm = document.getElementById('test-drive-form');
+        testDriveForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                preferredCar: document.getElementById('preferred-car').value,
+                preferredDate: document.getElementById('preferred-date').value,
+                preferredTime: document.getElementById('preferred-time').value
+            };
+            // 这里可以添加将表单数据发送到服务器的代码，例如使用fetch API
+            console.log('提交的试乘试驾预约数据：', formData);
+            // 简单的示例，实际应用中应将数据发送到服务器并处理响应
+            alert('Ваш запрос на тест-драйв успешно отправлен! Мы свяжемся с вами в ближайшее время.');
+        });
+    </script>
+</body>
+
+</html>

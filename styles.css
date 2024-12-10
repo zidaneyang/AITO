@@ -195,6 +195,58 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+/* 试乘试驾表单样式优化 */
+.test-drive-section {
+    margin-top: 60px; /* 给导航栏留出空间 */
+    padding: 20px;
+    text-align: center;
+}
+
+.test-drive-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+#test-drive-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#test-drive-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+#test-drive-form input,
+#test-drive-form select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#test-drive-form input[type="submit"] {
+    background-color: var(--button-bg-color);
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#test-drive-form input[type="submit"]:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+
 /* 底部导航栏样式 */
 footer {
     background-color: var(--primary-color);
